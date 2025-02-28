@@ -6,7 +6,7 @@ buttonTwo.addEventListener("click", function (e) {
 
   const dataTwo = new Date(document.getElementById("data-2").value);
   const dataVencimento = new Date();
-  dataVencimento.setTime(dataTwo.getTime() + 180 * 24 * 60 * 60 * 1000);
+  dataVencimento.setTime(dataTwo.getTime() + 181 * 24 * 60 * 60 * 1000);
   const resposta = document.getElementById("h3-data2");
   const difMs = dataAtual - dataTwo;
   const difDias = difMs / (1000 * 60 * 60 * 24);

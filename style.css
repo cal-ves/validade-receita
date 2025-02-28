@@ -4,33 +4,25 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-.container {
-  padding-top: 10%;
+  padding: 100px 0;
 }
 
 .row {
   text-align: center;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 20px;
 }
 
-.col-md-12,
-.col-sm-12 {
+.col-5 {
   height: auto;
   background-color: #fafcfe;
-  border-radius: 5%;
-  padding: 40px;
+  border-radius: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-}
-
-.form-data {
-  width: 40%;
 }
 
 h1 {
@@ -49,25 +41,51 @@ label {
   margin: 12px 0;
   align-items: center;
   height: 48px;
-  width: 80%;
+  width: 50%;
   font-size: 24px;
 }
 
-.btn {
+.btn-primary {
   font-size: 24px;
   margin: 12px 0;
-  width: 80%;
+  width: 50%;
   font-weight: bold;
   background-color: #4e68f4;
   border: none;
 }
 
-.btn:hover {
+.btn-primary:hover {
   background-color: #47aef1;
 }
 
+.tab-pane {
+  padding: 20px;
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.btn-outline-primary {
+  margin: 2px 0;
+}
+
 h3 {
-  margin-top: 40px;
+  margin-top: 35px;
+}
+
+.modal {
+  max-width: 480px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-dialog {
+  margin: 0 auto;
+}
+
+.modal-title {
+  color: #332f2f;
 }
 
 .footer {

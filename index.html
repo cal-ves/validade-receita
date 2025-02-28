@@ -11,23 +11,244 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-md">
+    <div class="container-fluid">
       <h1>Validade da Receita da Farmácia Popular</h1>
       <div class="row">
-        <div class="col-sm-12 col-md-12 form-data">
-          <h2 class="h2">Insira a data</h2>
-          <label for="data-2" class="input-label">Data da receita</label>
+        <div class="col-5 form-data">
+          <h2>Data da receita</h2>
           <input type="date" id="data-2" class="form-control" />
           <button type="button" id="btn-data-2" class="btn btn-primary">
             Verificar
           </button>
           <h3 id="h3-data2"></h3>
         </div>
+        <div class="col-5">
+          <h2>Endereços</h2>
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#rio-bonito"
+              >
+                Rio Bonito
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link disabled">Tanguá</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link disabled">Silva Jardim</button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane" id="rio-bonito">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#loyola"
+              >
+                Loyola
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#praca-cruzeiro"
+              >
+                Praça Cruzeiro
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#clinica-familia"
+              >
+                Clínica da Família
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bnh"
+              >
+                BNH
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#boqueirao"
+              >
+                Boqueirão
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bela-vista"
+              >
+                Bela Vista
+              </button>
+              <div class="modals">
+                <div class="modal" id="loyola">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">Loyola</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Avenida Martinho de Almeida, 222, Mangueirinha - Rio
+                          Bonito - RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="praca-cruzeiro">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">Praça Cruzeiro</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Rua Texeira de Souza, 0, Praça Cruzeiro - Rio Bonito -
+                          RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="clinica-familia">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">Clínica da Família</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Rodovia BR-101, KM 120, Praça Cruzeiro - Rio Bonito -
+                          RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="bnh">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">BNH</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Travessa B - Conjunto Habitacional Monteiro Lobato, 0,
+                          BNH - Rio Bonito - RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="ipe">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">Ipê</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Rua Vereador Agenor Duarte, 330, Ipê - Rio Bonito - RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="boqueirao">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">Boqueirão</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Rua Hilda Jardim Faria, 73, Boqueirão - Rio Bonito -
+                          RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="bela-vista">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title">Bela Vista</h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Avenida Manoel Duarte, 201 - Bela Vista - Rio Bonito -
+                          RJ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <footer class="footer container d-flex justify-content-center">
-        Criado por Calebe Alves
-      </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
